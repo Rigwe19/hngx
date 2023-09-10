@@ -16,7 +16,7 @@ class StageController extends Controller
             'current_day' => Carbon::now()->format('l'),
             'utc_time' => Carbon::now(),
             'track' => $track,
-            'github_file_url' => 'https://github/Rigwe19/hngx/blob.main/file_na.php',
+            'github_file_url' => 'https://github/Rigwe19/hngx/blob/master/app/Http/Controllers/StageController.php',
             'github_repo_url' => 'https://github/Rigwe19/hngx',
             'status_code' => 200
         ]);
