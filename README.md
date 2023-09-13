@@ -50,7 +50,10 @@
 <ul>
 <li>If you pass name of the peron in the url query parameters, it will process it accordingly</li>
 <li>If the id or name pass is not found it will return a 404 not found error</li>
-<li>Due to laravel limitation when updating, "_method" param will have to be pass with a value of "put" and it will be a post request not a put request</li>
+<li>Due to laravel limitation when updating, "_method" param will have to be pass with a value of "put" and it will be a post request not a put request
+
+![uml diagram](./put.png)
+</li>
 </ul>
 <h3>UML Diagram</h3>
 
