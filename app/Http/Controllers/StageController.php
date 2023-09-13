@@ -14,7 +14,7 @@ class StageController extends Controller
         return response()->json([
             'slack_name' => $slack_name,
             'current_day' => Carbon::now()->format('l'),
-            'utc_time' => Carbon::now(),
+            'utc_time' => Carbon::now()->format("Y-m-d\TH:i:s\Z"),
             'track' => $track,
             'github_file_url' => 'https://github/Rigwe19/hngx/blob/master/app/Http/Controllers/StageController.php',
             'github_repo_url' => 'https://github/Rigwe19/hngx',

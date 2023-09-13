@@ -18,4 +18,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', [\App\Http\Controllers\StageController::class, 'index']);
+// Route::get('/', [\App\Http\Controllers\StageController::class, 'index']);
+
+Route::controller(\App\Http\Controllers\ProfileController::class)->group(function() {
+    Route::post('/', 'store');
+    Route::get('/', 'index');
+    Route::get('/{id}', 'show');
+    Route::put('/{id}', 'update');
+    Route::delete('/{id}', 'destroy');
+});
